@@ -6,12 +6,12 @@ export class AuthController {
     constructor(private authService: AuthService) {}
 
     @Post('signup')
-    signup() {
+    signup(): string {
         return this.authService.signup()
     }
 
     @Post('signin')
-    signin() {
+    signin(): string {
         return this.authService.signin( )
     }
 }
